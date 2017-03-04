@@ -1,0 +1,30 @@
+<section class="main-section" [class.create-new-post]="is_new_form">
+
+  <app-banner *ngIf="show_banner"></app-banner>
+  <app-profile-header *ngIf="is_profile"></app-profile-header>
+  <app-list-of-topics-header *ngIf="is_list_of_topics"></app-list-of-topics-header>
+  <app-discussion-header *ngIf="is_discussion"></app-discussion-header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 forum-main">
+
+        <ul class="nav nav-tabs nav-justified" *ngIf="show_banner">
+          <li [routerLinkActive]="['active']"><a [routerLink]="['communication']" data-toggle="tab">Communities</a></li>
+          <li role="presentation" [routerLinkActive]="['active']">
+            <a [routerLink]="['trending']" data-toggle="tab">
+              <span class="wrap-bubble">Trending <span class="badge">22</span></span>
+            </a>
+          </li>
+        </ul>
+
+        <router-outlet></router-outlet>
+
+      </div>
+      <!-- /.forum-main -->
+      <app-sidebar></app-sidebar>
+      <!-- /.forum-sidebar -->
+    </div>
+
+  </div>
+</section>

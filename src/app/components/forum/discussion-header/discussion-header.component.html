@@ -1,0 +1,38 @@
+<div class="container create-new"><a [routerLink]="'../new-post'" class="btn btn-default">Create new post</a></div>
+
+<div class="container">
+  <div class="discussion-header">
+    <div class="discussion-title">
+      Sports Nutrition
+      <a [routerLink]="'../'" class="prev"><i class="fa fa-angle-left" aria-hidden="true"></i></a>
+      <a [routerLink]="'../'" class="next"><i class="fa fa-angle-right" aria-hidden="true"></i></a>
+    </div>
+    <div class="discussion-body">
+      <div class="date-links">
+        <div class="date-time">1 Aug, 2016<span class="time">18:06</span></div>
+        <a [routerLink]="'../'" target="_blank"><span class="fa fa-facebook" aria-hidden="true"></span></a>
+        <a [routerLink]="'../'" target="_blank"><span class="fa fa-twitter" aria-hidden="true"></span></a>
+        <a [routerLink]="'../'" target="_blank"><span class="fa fa-google-plus" aria-hidden="true"></span></a>
+      </div>
+      <div class="comment-text">
+        <div class="title">Sports Nutrition Books</div>
+        Does anyone know of any good sports nutrition books?
+      </div>
+      <div class="comment-text-meta row">
+        <div class="col-sm-6 col-md-7">
+          <div class="author">
+            <div class="ava"><span><img src="../../../assets/img/ava1_42x42.jpg" alt=""></span></div>
+            by <a [routerLink]="'../communities/profile'">Chad Spencer</a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-5 info-links">
+          <span><i class="fa fa-meh-o" aria-hidden="true"></i>651</span>
+          <a [routerLink]="'../'"><i class="fa fa-comment-o" aria-hidden="true"></i>23</a>
+          <a [routerLink]="'../'"><i class="fa fa-heart-o" aria-hidden="true"></i>21</a>
+          <a [routerLink]="'../'" class="linev"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+          <a [routerLink]="'../'" class="linev warning"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

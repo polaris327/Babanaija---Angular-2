@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <style>
+
+      .cls-3 {
+        fill: #ffffff;
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-4 {
+        fill: #00b1eb;
+        filter: url(#color-overlay-1);
+      }
+    </style>
+
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset in="SourceAlpha" dx="0" dy="2"/>
+      <feGaussianBlur result="dropShadow" stdDeviation="2"/>
+      <feFlood flood-color="#000000" flood-opacity="0.12"/>
+      <feComposite operator="in" in2="dropShadow"/>
+      <feComposite in="SourceGraphic" result="dropShadow"/>
+    </filter>
+    <filter id="color-overlay-1" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#00badf" flood-opacity="1"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend mode="normal" in2="SourceGraphic" result="colorOverlay"/>
+    </filter>
+  </defs>
+  <g id="social-pinterestsvg">
+    <circle id="circle-1" class="cls-3" cx="24" cy="22" r="21"/>
+    <path d="M25.018,11.990 C19.026,11.990 16.005,16.296 16.005,19.887 C16.005,22.061 16.826,23.996 18.587,24.717 C18.876,24.835 19.135,24.721 19.219,24.400 C19.277,24.178 19.415,23.619 19.476,23.386 C19.561,23.069 19.528,22.958 19.295,22.681 C18.787,22.081 18.462,21.304 18.462,20.202 C18.462,17.008 20.847,14.147 24.672,14.147 C28.059,14.147 29.919,16.222 29.919,18.992 C29.919,22.637 28.310,25.714 25.921,25.714 C24.601,25.714 23.614,24.620 23.930,23.278 C24.309,21.677 25.044,19.949 25.044,18.793 C25.044,17.758 24.490,16.895 23.343,16.895 C21.994,16.895 20.911,18.293 20.911,20.167 C20.911,21.360 21.313,22.168 21.313,22.168 C21.313,22.168 19.933,28.030 19.691,29.056 C19.209,31.100 19.619,33.607 19.653,33.860 C19.673,34.010 19.866,34.046 19.953,33.933 C20.077,33.770 21.684,31.782 22.230,29.796 C22.384,29.233 23.116,26.321 23.116,26.321 C23.555,27.159 24.835,27.897 26.197,27.897 C30.251,27.897 33.002,24.192 33.002,19.232 C33.002,15.482 29.834,11.990 25.018,11.990 Z" id="path-1" class="cls-4" fill-rule="evenodd"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<div class="form-content form-signup">
+  <div class="title-form">Sign Up<span class="notransform">It’s free and always will be</span></div>
+
+  <form action="forum-communities.html" method="post">
+    <div class="form-group two-inputs clearfix">
+      <input type="text" class="form-control" id="first_name" placeholder="First name" required="">
+      <input type="text" class="form-control" id="last_name" placeholder="Last name" required="">
+    </div>
+    <div class="form-group">
+      <input type="text" class="form-control" id="username" placeholder="Username" required="">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" id="pwd" placeholder="Password" required="">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" id="pwd2" placeholder="Confirm password" required="">
+    </div>
+
+    <div class="form-group">
+      <!--<button type="submit" class="btn">Login</button>-->
+      <a [routerLink]="'forum'" class="btn">Login</a>
+    </div>
+    <div class="form-group text-center">or</div>
+
+    <a [routerLink]="'forum'" class="btn fb-button"><i class="fa fa-facebook" aria-hidden="true"></i> Login with Facebook</a>
+  </form>
+
+</div>

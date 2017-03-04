@@ -1,0 +1,34 @@
+<section class="main-section section-bg clearfix">
+
+  <div class="container">
+    <div class="row">
+      <div class="mytable">
+
+        <div class="col-md-7 login-text">
+          <div class="line">
+            <div class="h2">Web Page Editors</div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+              Lorem Ipsum has been the industry's standard dummy text </p>
+          </div>
+          <div class="line">
+            <div class="h2">Desktop Publishing Packages</div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+              Lorem Ipsum has been the industry's standard dummy text </p>
+          </div>
+          <div class="line">
+            <div class="h2">Many Variations of Passages</div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+              Lorem Ipsum has been the industry's standard dummy text </p>
+          </div>
+        </div>
+
+        <div class="col-md-5 login-form">
+          <app-login *ngIf="showLoginForm"></app-login>
+          <app-signup *ngIf="!showLoginForm"></app-signup>
+        </div>
+
+      </div>
+      <!-- /.forum-main -->
+    </div>
+  </div>
+</section>

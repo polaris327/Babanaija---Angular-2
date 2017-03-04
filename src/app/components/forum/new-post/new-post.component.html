@@ -1,0 +1,28 @@
+<form action="forum-discussion.html" method="post">
+  <div class="form-group">
+    <label for="topic-title">Topic Title</label>
+    <div>
+      <input type="text" class="form-control" id="topic-title" placeholder="Describe your topic" required>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="topic-comm">Community</label>
+    <div>
+      <select class="selectpicker" title="Choose community" id="topic-comm" required>
+        <option value="Community 1">Community 1</option>
+        <option value="Community comm 2">Community comm 2</option>
+        <option value="Community 3">Community 3</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <textarea class="form-control" id="topic-message" placeholder="Write your post" required></textarea>
+  </div>
+  <div class="form-group">
+    <label for="topic-tags">Tags</label>
+    <div>
+      <input type="text" class="form-control" id="topic-tags" placeholder="At least one tag such as (shopping, movies, finance, etc.)" required>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-default">Post topic</button>
+</form>

@@ -1,0 +1,17 @@
+<div class="list-item clearfix">
+  <div class="img">
+    <a [routerLink]="'../list-of-topics?id = 343'"><img src="../../../assets/img/thumb1.jpg" alt=""></a>
+  </div>
+  <div class="inner">
+    <div class="title">
+      <a [routerLink]="'../list-of-topics'">{{story.title}}</a>
+      <span>{{story.topics}} Topics</span>
+    </div>
+    <div>{{story.content}} </div>
+    <div class="meta-footer">
+      <a [routerLink]="'../list-of-topics'" class="label label-highlight" style="margin-right: 5px" *ngFor="let tag of story.tags">
+        #{{tag}}
+      </a>
+    </div>
+  </div>
+</div>

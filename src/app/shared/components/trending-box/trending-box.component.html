@@ -1,0 +1,30 @@
+<div class="list-item clearfix">
+  <div class="inner">
+    <div class="title edit-delete">
+      <a [routerLink]="['../discussion']">{{trending.title}}</a>
+      <div class="edit-delete-links">
+        <span>{{trending.timeElapsed}} min ago</span>
+        <a [routerLink]="['../trending']" class="edit">Edit</a>
+        <a [routerLink]="['../trending']" class="delete">Delite</a>
+      </div>
+    </div>
+    <div class="comment-text">
+      <strong>{{trending.topic}} <span>{{trending.comment}}</span></strong>
+      <div>{{trending.content}} </div>
+    </div>
+    <div class="comment-text-meta row">
+      <div class="col-sm-6 col-md-7">
+        <div class="author">
+          <div class="ava online"><span><img src="../../../assets/img/ava1_42x42.jpg" alt=""></span></div>
+          by <a [routerLink]="'../communities/profile'">{{trending.user.username}}</a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-5 info-links">
+        <span><i class="fa fa-user-o" aria-hidden="true"></i>651</span>
+        <a [routerLink]="['../trending']"><i class="fa fa-comment-o" aria-hidden="true"></i>23</a>
+        <a [routerLink]="['../trending']"><i class="fa fa-heart-o" aria-hidden="true"></i>1</a>
+        <a [routerLink]="['../trending']"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

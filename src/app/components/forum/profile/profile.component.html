@@ -1,0 +1,161 @@
+<ul class="nav nav-tabs nav-justified">
+  <li class="active"><a [routerLink]="['/forum/profile']" data-toggle="tab">Profile</a></li>
+  <li><a [routerLink]="['/forum/profile']" data-toggle="tab">Account</a></li>
+  <li><a [routerLink]="['/forum/profile']" data-toggle="tab">Following</a></li>
+</ul>
+<div class="tab-content clearfix">
+  <div class="tab-pane active" id="profile">
+    <div class="tab-content-inner" style="height: 820px;">
+      <form class="clearfix">
+        <div class="two-group">
+          <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" class="form-control" value="Tatyana">
+          </div>
+          <div class="form-group">
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" class="form-control" value="Nikitenko">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="job">Job</label>
+          <input type="text" id="job" class="form-control" value="UI/UX Designer">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" class="form-control" value="tnikitenko.design@gmail.com">
+        </div>
+
+        <div class="form-group">
+          <label for="url">Website URL</label>
+          <input type="text" id="url" class="form-control" value="https://www.behance.net/tnikitenko">
+        </div>
+
+        <div class="form-group">
+          <label for="about">About Me</label>
+          <textarea id="about" class="form-control">UI/UX freelance designer based in Odessa. Have interesting project? Contact me at tnikitenko.design@gmail.com</textarea>
+        </div>
+
+        <div class="form-group two-links">
+          <a [routerLink]="['/forum/profile']" class="bt">Cancel</a> <a [routerLink]="['/forum/profile']" class="bt active">Save changes</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="tab-pane" id="account">
+    <div class="tab-content-inner" style="height: 1054px;">
+      <div>
+        <p><strong>Do you need to delete your account?</strong></p>
+        <p>Deleting your account will delete all of your content and remove all data associated with it.</p>
+        <p><a [routerLink]="['/forum/profile']">I want to delete my account</a></p>
+      </div>
+      <hr/>
+      <form class="clearfix">
+        <div class="form-group">
+          <label for="old_pass">Old password</label>
+          <input type="password" id="old_pass" class="form-control" value="">
+        </div>
+        <div class="form-group">
+          <label for="new_pass">New password</label>
+          <input type="password" id="new_pass" class="form-control" value="">
+        </div>
+        <div class="form-group">
+          <label for="confirm_pass">Confirm password</label>
+          <input type="password" id="confirm_pass" class="form-control" value="">
+        </div>
+        <div class="form-group two-links">
+          <button type="button" class="bt">Cancel</button>
+          <button type="submit" class="bt active">Save changes</button>
+        </div>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="tab-pane" id="following">
+    <div class="content-main">
+      <ul class="list-follow">
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava3_160x160.jpg" alt=""></div>
+          <div class="name">Frances Powell</div>
+          <div class="status ">Online 1 day ago</div>
+          <a [routerLink]="['/forum/profile']" class="bt active">Following</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava6_160x160.jpg" alt=""></div>
+          <div class="name">Jacob Burns</div>
+          <div class="status ">Online 2 days ago</div>
+          <a [routerLink]="['/forum/profile']" class="bt active">Following</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava1_160x160.jpg" alt=""></div>
+          <div class="name">Cory James</div>
+          <div class="status online">Online</div>
+          <a [routerLink]="['/forum/profile']" class="bt active">Following</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava2_160x160.jpg" alt=""></div>
+          <div class="name">Ken Bell</div>
+          <div class="status">Online 3 hours ago</div>
+          <a [routerLink]="['/forum/profile']" class="bt active">Following</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava5_160x160.jpg" alt=""></div>
+          <div class="name">Ruby Lee</div>
+          <div class="status online">Online</div>
+          <a [routerLink]="['/forum/profile']" class="bt">Unfollow</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava4_160x160.jpg" alt=""></div>
+          <div class="name">Arianna Elliott</div>
+          <div class="status online">Online</div>
+          <a [routerLink]="['/forum/profile']" class="bt">Unfollow</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava1_160x160.jpg" alt=""></div>
+          <div class="name">Cory James</div>
+          <div class="status online">Online</div>
+          <a [routerLink]="['/forum/profile']" class="bt">Unfollow</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava2_160x160.jpg" alt=""></div>
+          <div class="name">Ken Bell</div>
+          <div class="status">Online 3 hours ago</div>
+          <a [routerLink]="['/forum/profile']" class="bt">Unfollow</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava3_160x160.jpg" alt=""></div>
+          <div class="name">Frances Powell</div>
+          <div class="status ">Online 1 day ago</div>
+          <a [routerLink]="['/forum/profile']" class="bt">Unfollow</a>
+        </li>
+      </ul>
+    </div>
+
+    <nav aria-label="Page navigation">
+      <ul class="navi-pagination">
+        <li class="prev">
+          <a [routerLink]="['/forum/profile']" aria-label="Previous">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li><a [routerLink]="['/forum/profile']">1</a></li>
+        <li class="active"><a [routerLink]="['/forum/profile']">2</a></li>
+        <li><a [routerLink]="['/forum/profile']">3</a></li>
+        <li><a [routerLink]="['/forum/profile']">4</a></li>
+        <li><a [routerLink]="['/forum/profile']">5</a></li>
+        <li><a [routerLink]="['/forum/profile']">6</a></li>
+        <li><span>...</span></li>
+        <li><a [routerLink]="['/forum/profile']">14</a></li>
+        <li class="next">
+          <a [routerLink]="['/forum/profile']" aria-label="Next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</div>

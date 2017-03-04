@@ -1,0 +1,30 @@
+<div class="tab-content clearfix">
+  <div class="tab-pane active" id="tab1">
+    <div class="list-blocks">
+      <app-story-box></app-story-box>
+    </div>
+
+    <nav aria-label="Page navigation">
+      <ul class="navi-pagination">
+        <li class="prev">
+          <a [routerLink]="'../'" aria-label="Previous">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li><a [routerLink]="'../'">1</a></li>
+        <li class="active"><a [routerLink]="'../'">2</a></li>
+        <li><a [routerLink]="'../'">3</a></li>
+        <li><a [routerLink]="'../'">4</a></li>
+        <li><a [routerLink]="'../'">5</a></li>
+        <li><a [routerLink]="'../'">6</a></li>
+        <li><span>...</span></li>
+        <li><a [routerLink]="'../'">14</a></li>
+        <li class="next">
+          <a [routerLink]="'../'" aria-label="Next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>

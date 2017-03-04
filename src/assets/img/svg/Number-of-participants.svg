@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <style>
+
+      .cls-3 {
+        fill: #00adf7;
+        stroke: #ffffff;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        fill: #ffffff;
+      }
+    </style>
+  </defs>
+  <g id="number-of-participantssvg">
+    <circle id="circle-1" class="cls-3" cx="25" cy="26" r="21"/>
+    <circle id="circle-2" class="cls-4" cx="25" cy="26" r="19"/>
+  </g>
+</svg>

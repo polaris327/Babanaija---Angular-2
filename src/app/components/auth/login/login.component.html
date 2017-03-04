@@ -1,0 +1,27 @@
+<div class="form-content">
+  <div class="title-form">Login<span>Welcome Back</span></div>
+
+  <form>
+    <div class="form-group">
+      <input type="text" class="form-control" id="username" placeholder="Username" required="">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" id="pwd" placeholder="Password" required="">
+    </div>
+    <div class="form-group">
+      <!--<button type="submit" class="btn">Login</button>-->
+      <a [routerLink]="'forum'" class="btn">Login</a>
+    </div>
+
+    <div class="form-bottom row">
+      <div class="col-xs-6 col-sm-6">
+        <div class="mycheckbox">
+          <input type="checkbox" value="1" name="remember" checked id="remember"><label for="remember">Remember Me</label>
+        </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 text-right"><a [routerLink]="'/'">Forgot Password?</a></div>
+    </div>
+  </form>
+
+  <a [routerLink]="'forum'" class="btn fb-button"><i class="fa fa-facebook" aria-hidden="true"></i> Login with Facebook</a>
+</div>

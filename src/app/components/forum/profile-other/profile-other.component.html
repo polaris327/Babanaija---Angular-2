@@ -1,0 +1,174 @@
+<ul class="nav nav-tabs nav-justified">
+  <li [class.active]="_tab_mode == 0"><a (click)="_tab_mode = 0" data-toggle="tab">Followers</a></li>
+  <li [class.active]="_tab_mode == 1"><a (click)="_tab_mode = 1" data-toggle="tab">Following</a></li>
+</ul>
+<div class="tab-content clearfix">
+  <div class="tab-pane" id="tab1" [class.active]="_tab_mode == 0">
+    <div class="content-main">
+      <ul class="list-follow">
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava1_160x160.jpg" alt=""></div>
+          <div class="name">Cory James</div>
+          <div class="status online">Online</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt active">Following</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava2_160x160.jpg" alt=""></div>
+          <div class="name">Ken Bell</div>
+          <div class="status">Online 3 hours ago</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt active">Following</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava3_160x160.jpg" alt=""></div>
+          <div class="name">Frances Powell</div>
+          <div class="status ">Online 1 day ago</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt active">Following</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava6_160x160.jpg" alt=""></div>
+          <div class="name">Jacob Burns</div>
+          <div class="status ">Online 2 days ago</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt active">Following</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava5_160x160.jpg" alt=""></div>
+          <div class="name">Ruby Lee</div>
+          <div class="status online">Online</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt">Unfollow</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava4_160x160.jpg" alt=""></div>
+          <div class="name">Arianna Elliott</div>
+          <div class="status online">Online</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt">Unfollow</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava1_160x160.jpg" alt=""></div>
+          <div class="name">Cory James</div>
+          <div class="status online">Online</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt">Unfollow</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava2_160x160.jpg" alt=""></div>
+          <div class="name">Ken Bell</div>
+          <div class="status">Online 3 hours ago</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt">Unfollow</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava3_160x160.jpg" alt=""></div>
+          <div class="name">Frances Powell</div>
+          <div class="status ">Online 1 day ago</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt">Unfollow</a>
+        </li>
+      </ul>
+    </div>
+
+    <nav aria-label="Page navigation">
+      <ul class="navi-pagination">
+        <li class="prev">
+          <a [routerLink]="['/forum/communities/profile']" aria-label="Previous">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li><a [routerLink]="['/forum/communities/profile']">1</a></li>
+        <li class="active"><a [routerLink]="['/forum/communities/profile']">2</a></li>
+        <li><a [routerLink]="['/forum/communities/profile']">3</a></li>
+        <li><a [routerLink]="['/forum/communities/profile']">4</a></li>
+        <li><a [routerLink]="['/forum/communities/profile']">5</a></li>
+        <li><a [routerLink]="['/forum/communities/profile']">6</a></li>
+        <li><span>...</span></li>
+        <li><a [routerLink]="['/forum/communities/profile']">14</a></li>
+        <li class="next">
+          <a [routerLink]="['/forum/communities/profile']" aria-label="Next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="tab-pane trending" id="trending" [class.active]="_tab_mode == 1">
+    <div class="content-main">
+      <ul class="list-follow">
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava3_160x160.jpg" alt=""></div>
+          <div class="name">Frances Powell</div>
+          <div class="status ">Online 1 day ago</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt active">Following</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava6_160x160.jpg" alt=""></div>
+          <div class="name">Jacob Burns</div>
+          <div class="status ">Online 2 days ago</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt active">Following</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava1_160x160.jpg" alt=""></div>
+          <div class="name">Cory James</div>
+          <div class="status online">Online</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt active">Following</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava2_160x160.jpg" alt=""></div>
+          <div class="name">Ken Bell</div>
+          <div class="status">Online 3 hours ago</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt active">Following</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava5_160x160.jpg" alt=""></div>
+          <div class="name">Ruby Lee</div>
+          <div class="status online">Online</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt">Unfollow</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava4_160x160.jpg" alt=""></div>
+          <div class="name">Arianna Elliott</div>
+          <div class="status online">Online</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt">Unfollow</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava1_160x160.jpg" alt=""></div>
+          <div class="name">Cory James</div>
+          <div class="status online">Online</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt">Unfollow</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava2_160x160.jpg" alt=""></div>
+          <div class="name">Ken Bell</div>
+          <div class="status">Online 3 hours ago</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt">Unfollow</a>
+        </li>
+        <li>
+          <div class="ava-follow"><img src="../../../assets/img/ava3_160x160.jpg" alt=""></div>
+          <div class="name">Frances Powell</div>
+          <div class="status ">Online 1 day ago</div>
+          <a [routerLink]="['/forum/communities/profile']" class="bt">Unfollow</a>
+        </li>
+      </ul>
+    </div>
+
+    <nav aria-label="Page navigation">
+      <ul class="navi-pagination">
+        <li class="prev">
+          <a [routerLink]="['/forum/communities/profile']" aria-label="Previous">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li><a [routerLink]="['/forum/communities/profile']">1</a></li>
+        <li class="active"><a [routerLink]="['/forum/communities/profile']">2</a></li>
+        <li><a [routerLink]="['/forum/communities/profile']">3</a></li>
+        <li><a [routerLink]="['/forum/communities/profile']">4</a></li>
+        <li><a [routerLink]="['/forum/communities/profile']">5</a></li>
+        <li><a [routerLink]="['/forum/communities/profile']">6</a></li>
+        <li><span>...</span></li>
+        <li><a [routerLink]="['/forum/communities/profile']">14</a></li>
+        <li class="next">
+          <a [routerLink]="['/forum/communities/profile']" aria-label="Next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div class="list-item clearfix">
+  <div class="inner">
+    <div class="title">
+      <a [routerLink]="['/forum/discussion']">{{topic.title}}</a>
+      <span>{{topic.timeElapsed}} min ago</span>
+      <!--<a [routerLink]="['/forum/list-of-topics']" class="edit">Edit</a>-->
+      <!--<a [routerLink]="['/forum/list-of-topics']" class="delete">Delete</a>-->
+    </div>
+    <div class="comment-text">
+      <a [routerLink]="['/forum/discussion']" class="discussion-link"></a>
+      <strong>{{topic.topic}}</strong>{{topic.content}}
+    </div>
+    <div class="comment-text-meta row">
+      <div class="col-sm-6 col-md-7">
+        <div class="author">
+          by <a [routerLink]="['/forum/communities/profile']">{{topic.user.username}}</a>
+        </div>
+      </div>
+      <div class="col-sm-6 col-md-5 info-links" style="opacity: 1;">
+        <span><i class="fa fa-meh-o" aria-hidden="true"></i>{{topic.likes}}</span>
+        <a [routerLink]="['/forum/list-of-topics']"><i class="fa fa-comment-o" aria-hidden="true"></i>{{topic.notes}}</a>
+        <a [routerLink]="['/forum/list-of-topics']"><i class="fa fa-heart-o" aria-hidden="true"></i>{{topic.favorite}}</a>
+        <a [routerLink]="['/forum/list-of-topics']" [class.active]="topic.stared"><i class="fa fa-star-o" aria-hidden="true"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

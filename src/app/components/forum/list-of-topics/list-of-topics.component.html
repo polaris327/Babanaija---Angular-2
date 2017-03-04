@@ -1,0 +1,76 @@
+<ul class="nav nav-tabs nav-justified">
+  <li [class.active]="_tab_mode == 0"><a (click)="_tab_mode = 0">All Posts</a></li>
+  <li [class.active]="_tab_mode == 1"><a (click)="_tab_mode = 1">My Posts</a></li>
+  <li [class.active]="_tab_mode == 2"><a (click)="_tab_mode = 2">Stared</a></li>
+</ul>
+
+<div class="tab-content clearfix">
+
+  <div class="tab-pane trending" id="alltab" [class.active]="_tab_mode == 0">
+    <div class="list-blocks">
+      <app-topic-box></app-topic-box>
+    </div>
+
+    <nav aria-label="Page navigation">
+      <ul class="navi-pagination">
+        <li class="prev">
+          <a [routerLink]="['/forum/list-of-topics']" aria-label="Previous">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li><a [routerLink]="['/forum/list-of-topics']">1</a></li>
+        <li class="active"><a [routerLink]="['/forum/list-of-topics']">2</a></li>
+        <li><a [routerLink]="['/forum/list-of-topics']">3</a></li>
+        <li><a [routerLink]="['/forum/list-of-topics']">4</a></li>
+        <li><a [routerLink]="['/forum/list-of-topics']">5</a></li>
+        <li><a [routerLink]="['/forum/list-of-topics']">6</a></li>
+        <li><span>...</span></li>
+        <li><a [routerLink]="['/forum/list-of-topics']">14</a></li>
+        <li class="next">
+          <a [routerLink]="['/forum/list-of-topics']" aria-label="Next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="tab-pane trending" id="toptab" [class.active]="_tab_mode == 1">
+    <div class="list-blocks">
+      <app-topic-box></app-topic-box>
+    </div>
+
+    <nav aria-label="Page navigation">
+      <ul class="navi-pagination">
+        <li class="prev">
+          <a [routerLink]="['/forum/list-of-topics']" aria-label="Previous">
+            <span class="fa fa-angle-left" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li><a [routerLink]="['/forum/list-of-topics']">1</a></li>
+        <li class="active"><a [routerLink]="['/forum/list-of-topics']">2</a></li>
+        <li><a [routerLink]="['/forum/list-of-topics']">3</a></li>
+        <li><a [routerLink]="['/forum/list-of-topics']">4</a></li>
+        <li><a [routerLink]="['/forum/list-of-topics']">5</a></li>
+        <li><a [routerLink]="['/forum/list-of-topics']">6</a></li>
+        <li><span>...</span></li>
+        <li><a [routerLink]="['/forum/list-of-topics']">14</a></li>
+        <li class="next">
+          <a [routerLink]="['/forum/list-of-topics']" aria-label="Next">
+            <span class="fa fa-angle-right" aria-hidden="true"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+
+  <div class="tab-pane trending" id="Staredtab" [class.active]="_tab_mode == 2">
+    <div class="list-blocks">
+      <app-topic-box></app-topic-box>
+    </div>
+
+  </div>
+
+</div>
